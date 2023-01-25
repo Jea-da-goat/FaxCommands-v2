@@ -1,0 +1,14 @@
+name: FaxCommands
+version: ${project.version}
+main: gg.fax.FaxCommands.Main
+api-version: 1.13
+depend: [ ProtocolLib ]
+commands:
+  TabList:
+    description: TabList Main Command
+  xShortcuts:
+    description: Shortcuts Sub Command
+  잠금:
+    description: 잠금 명령어
+  xWhitelist:
+    description: Whitelist Command Main Command
