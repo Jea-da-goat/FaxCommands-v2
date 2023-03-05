@@ -1,5 +1,6 @@
 package gg.fax.FaxCommands;
 
+import com.destroystokyo.paper.event.server.AsyncTabCompleteEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -26,6 +27,7 @@ public class TabCompleteManagement implements Listener {
 
     @EventHandler
     public void onTab(PlayerCommandSendEvent e) {
+        System.out.println("PlayerCommandSendEvent");
         Player p = e.getPlayer();
         if(p.hasPermission("tabcomplete.bypass")) {
             return;
@@ -36,11 +38,11 @@ public class TabCompleteManagement implements Listener {
                 e.getCommands().add((String) entry.getKey());
             }
         }
-
     }
 
     @EventHandler
     public void onTabEvent(TabCompleteEvent e) {
+        System.out.println("TabCompleteEvent");
         Player p = (Player) e.getSender();
         if(e.getCompletions().contains("국가")) {
             List<String> complete = new ArrayList<>();

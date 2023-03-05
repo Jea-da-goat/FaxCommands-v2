@@ -79,11 +79,18 @@
             <version>1.13-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.comphenix.protocol</groupId>
             <artifactId>ProtocolLib</artifactId>
             <version>4.8.0</version>
             <scope>provided</scope>
+        </dependency>-->
+        <dependency>
+            <groupId>com.comphenix.protocol</groupId>
+            <artifactId>v</artifactId>
+            <version>5.0.0-SNAPSHOT-b612</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/ProtocolLib.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.mojang</groupId>
